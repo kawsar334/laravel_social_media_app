@@ -1,0 +1,13 @@
+
+
+
+.home{
+    flex: 5;
+    background-color: transparent;
+    height: max-content;
+    padding: 10px;
+    overflow-x: auto;
+    align-self: self-start;
+
+}
+

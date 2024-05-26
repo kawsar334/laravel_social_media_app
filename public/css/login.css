@@ -1,0 +1,190 @@
+.login {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginwrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+}
+
+.loginleft {
+    flex: 1;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items:center;
+    
+}
+
+.loginimg {
+    width: 100%;
+    height: 200px;
+}
+.logintext{
+    width:450px ;
+    font-size: 30px;
+
+}
+
+.loginright {
+    flex: 1;
+}
+
+.loginform {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.loginformitem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logininput {
+    height: 60px;
+    width: 400px;
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.loginbtn {
+    background-color: #0866FF;
+    width: 400px;
+    height: 50px;
+    border-radius: 10px;
+    padding: 5px !important;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.forgopassword {
+    color: #0866FF;
+    text-decoration: none;
+    font-size: 20px;
+
+}
+
+.hr {
+    width: 400px;
+    border: 0.1vmax solid lightgray;
+}
+
+.createnewaccount {
+    background-color: #42b72a;
+    width: 400px;
+    height: 50px;
+    border-radius: 10px;
+    padding: 5px !important;
+    color: white;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 769px) {
+    .login {
+            /* width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center; */
+            
+        }
+    
+        .loginwrapper {
+            /* display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            width: 100%;
+            height: 100%;
+            flex-wrap: wrap; */
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+        .loginleft {
+            width: 100%;
+            padding: 10px;
+        }
+    
+        .loginimg {
+            width: 300px;
+            height: 100px;
+        }
+    
+        .logintext {
+            width: 300px;
+            font-size: 25px;
+            padding: 10px;
+    
+        }
+        .loginright{
+            width: 100%;
+            height: max-content;
+            margin-top: -130px;
+        }
+
+        .loginform {
+            width: 100%;
+           
+        }
+                .loginformitem {
+                    width: 80%;
+                }
+    
+       
+    
+        .logininput {
+            height: 40px;
+            width: 100%;
+            border: 1px solid lightgrey;
+           
+        }
+    
+        .loginbtn {
+            /* all: unset; */
+            height: 40px;
+            width: 100% !important;
+            background-color: #0866FF;
+            border: none;
+        }
+    
+        .forgopassword {
+            
+    
+        }
+    
+        .hr {
+            width: 400px;
+            border: 0.1vmax solid lightgray;
+        }
+    
+        .createnewaccount {
+         
+            width: 100%;
+            height: 40px;
+           
+        }
+}

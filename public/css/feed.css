@@ -1,0 +1,185 @@
+.feed {
+    width: 100%;
+    height: 100px;
+    position: relative;
+    margin-top: 10px;
+    background-color: white;
+    padding: 5px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+.feedwrapper {}
+
+.feedtop {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+    margin: 0 auto;
+    width: 90%;
+
+}
+
+.feedavatar {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.feedtext {
+    border: 1px solid lightgray;
+    height: 40px;
+    border-radius: 50px;
+    width: 90%;
+    padding: 5px 10px;
+    background-color: lightgray;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 20px;
+
+}
+.feedbottom{
+    width: 90%;
+    margin: 10px auto;
+    padding: 10px;
+    
+}
+.feedbottomitems{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.feedbottomitem{
+    font-size: 20px;
+    cursor: pointer;
+}
+
+ #createpost {
+     display: none;
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background: rgba(0, 0, 0, 0.5);
+     justify-content: center;
+     align-items: center;
+ }
+.createpost {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: gray;
+    top: 0px;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.2);
+}
+.createpostwrapper{
+    width: 500px;
+    height: 98vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    gap: 20px;
+    border-radius: 10px;
+
+}
+.createpostitem{
+    width: 90%;
+    padding: 5px;
+}
+/* .==========createpost_top */
+
+.createpost_top{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid lightgray;
+    font-size: 30px;
+    cursor: pointer;
+
+
+}
+.createpost_avatar{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.createpostaudiance{
+    display: flex;
+    gap: 20px;
+    cursor: pointer;
+}
+.createposname{
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+.createpost_aud_text{
+    display: flex;
+    gap: 5px ;
+    text-transform: capitalize;
+}
+
+.postinput{
+    width: 90%;
+    height: 40px;
+    border:1px solid lightgray ;
+    border-radius: 5px;
+    padding: 5px;
+}
+.createpostbtn{
+    all: unset;
+    width: 90%;
+    height: 40px;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #0866FF;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 600;
+    padding: 5px;
+}
+
+@media screen and (max-width: 769px) {
+.feedtop {
+        gap: 10px;
+    }
+
+    .feedavatar {
+        width: 25px;
+        height: 25px;
+    }
+
+    .feedtext {
+
+        height: 30px;
+
+    }
+    
+        .feedbottomitems {
+            justify-content: space-between;    
+        }
+    
+        .feedbottomitem {
+            font-size: 13px;
+            margin-top: 10px;
+        }
+
+                .createpostwrapper {
+                    width: 100%;
+                    height: 100vh;        
+                }
+
+}

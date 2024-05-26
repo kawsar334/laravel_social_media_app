@@ -1,0 +1,79 @@
+
+.right {
+    flex: 1.5;
+    position: sticky !important;
+    top: 70px;
+    align-self: self-start;
+    height: 100vh;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: #888 #f1f1f1;
+}
+
+.right::-webkit-scrollbar {
+    width: 12px;
+}
+
+.right::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.right::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 6px;
+    border: 3px solid #f1f1f1;
+}
+
+.right::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.rightbarwrapper{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+.rightbaritem{
+    border-bottom: 0.1px solid lightgray;
+    padding: 10px;
+  
+}
+.righbarheader{
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+.sponsored{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    margin-top: 20px !important;
+}
+.sponsoredimg{
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+}
+.avatarimg{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid lightgray;
+}
+.sp_title{
+    font-size: 20px;
+    color: black;
+}
+
+@media screen and (max-width: 769px) {
+    .right {
+        display: none;
+    }
+}
