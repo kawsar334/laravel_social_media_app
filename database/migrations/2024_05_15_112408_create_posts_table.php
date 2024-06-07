@@ -20,7 +20,7 @@ return new class extends Migration
             $table->string('image');
             $table->unsignedBigInteger('user_id');
             $table->foreign('user_id')->references('id')->on('users')->onUpdate("cascade")->onDelete("cascade");
-            $table->timestamps();//28
+            $table->timestamps();
         });
     }
 

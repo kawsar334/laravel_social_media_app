@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Post;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -14,7 +15,8 @@ class AccountController extends Controller
     //
 
     public function Home(){
-        return view('front.home');
+        $posts = Post::all();
+        return view('front.home',['posts'=>$posts]);
     }
 
     // show registration form
@@ -84,7 +86,7 @@ class AccountController extends Controller
         if(!$user){
             return 'user not found ! ';
         }else{
-        return view('front.profile');
+        return view('front.profile',['user'=>$user]);
         }
     }
 

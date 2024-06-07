@@ -11,11 +11,9 @@
         </div>
         <div class="navmiddle">
             <a href="/">
-
                 <i class="fa-solid fa-house navicon"></i>
             </a>
             <a href="/">
-
                 <i class="fa-solid fa-user-group navicon"></i>
             </a>
             <a href="/">
@@ -38,15 +36,19 @@
             <a href="/">
                 <i class="fa-solid fa-bell navicon"></i>
             </a>
-            <a href="/">
 
+
+            @auth
+            <a href="{{ route('user.profile', ['id' => Auth::user()->id]) }}">
                 <img src="https://scontent.fjed4-5.fna.fbcdn.net/v/t39.30808-1/418830853_414039494503890_7130123417897678456_n.jpg?stp=c0.0.200.200a_dst-jpg_p200x200&_nc_cat=103&ccb=1-7&_nc_sid=5f2048&_nc_ohc=2DyYEiFyz64Q7kNvgGmZcjP&_nc_oc=AdgDSMAy-Go0NrkE1iQsTxlq0vmVsSkKdlgUYji6d1yDjXHqbBnNftd-nhV-Q3sMMTPLvrpmI7ZloSDSyCUiLto1&_nc_ht=scontent.fjed4-5.fna&oh=00_AYBum7NZNPlAgF0SuunXi-6U5PYZgAgHy8f8PeWgKq9joA&oe=664BA55C" class="navimg" />
-
             </a>
             <form action="{{route('account.logout')}}" method="POST">
                 @csrf
                 <button>Logout</button>
             </form>
+            @endauth
+
+
         </div>
         <!-- menu start here ====================== -->
         <div id="menu" class="menu">

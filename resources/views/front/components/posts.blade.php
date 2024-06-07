@@ -1,6 +1,8 @@
 <div class="posts">
-    
+
     <!--  -->
+    @foreach($posts as $post)
+
     <div class="post">
         <div class="posttop">
             <div class="posttopleft">
@@ -13,9 +15,13 @@
             <div class="posttopright"><i class="fa-solid fa-ellipsis"></i></div>
         </div>
         <div class="postmiddle">
-            <h3 class="posttitle">when an unknown printer took a galley </h3>
-            <p class="postdesc"> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book <br /> <a href="#">see more</a> </p>
-            <img src="https://images.pexels.com/photos/1547813/pexels-photo-1547813.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" class="postimg">
+            <h3 class="posttitle">{{$post->title}} </h3>
+            <p class="postdesc"> {{$post->desc}} <br /> <a href="#">see more</a> </p>
+            <!-- @if ($post->image)
+            <img src="{{ asset('images/' . $post->image) }}" alt="{{ $post->title }}" class="postimg">
+            @else
+            <img src="https://images.pexels.com/photos/1547813/pexels-photo-1547813.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Default Image" class="postimg">
+            @endif -->
         </div>
         <div class="postbottom">
             <div class="postbottomleft">
@@ -39,4 +45,5 @@
         </div>
     </div>
 
+    @endforeach
 </div>
